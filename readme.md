@@ -9,6 +9,7 @@ Everytime you launch scs, it will prompt you will a few choices of what you'd li
 - Add a new server
 - Connect to server
 - Edit existing server
+- Removev existing server
 
 etc.
 
