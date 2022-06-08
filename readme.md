@@ -1,7 +1,5 @@
 # Server Connection Script
 
-*A better name will come in the future*
-
 ## What is it?
 
 Server connection Script, or scs, is a lazy mans ssh connection tool to help eleviate some of the tedious connections settings. Instead of using code like `ssh -P xxx -i /location/of/key user@example.com` and having to remember every line for each server, or having to manually add new Hosts to the `.ssh/config` file for each server, this script will help.
