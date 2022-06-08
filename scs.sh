@@ -5,3 +5,4 @@
 ## This will update the users personal .ssh/config file.
 
 cat bin/welcomemessage
+
