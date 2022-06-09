@@ -1,2 +1,1 @@
-cat ~/.config/scs/scs | less
-~/.config/scs/scs
+#!/bin/sh
