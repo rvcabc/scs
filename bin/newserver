@@ -1,1 +1,82 @@
 #!/bin/sh
+
+## Functions
+# Needs variables for Host, HostName, User, Port, IdentityFile
+NewServer() {
+  read -p "What do you want to call it: " HOST
+  read -p "What is the host address: " HOSTNAME
+  read -p "What is the User Name: " USER
+  read -p "What is the Port [Default: 22]: " PORT
+}
+
+AddKey() {
+  echo "hello"
+}
+
+GenerateKey() {
+  echo "hello"
+}
+
+ShowConfig() {
+  echo "hello"
+}
+
+Save() {
+  echo "hello"
+}
+
+Back() {
+  ~/.config/scs/scs
+}
+
+## Defaults for all dialog boxes.
+HEIGHT=15
+WIDTH=40
+CHOICE_HEIGHT=4
+BACKTITLE="Server Connect Script"
+TITLE="Add New Server"
+MENU="Select one of the following:"
+
+OPTIONS=(1 "Add New Server"
+         2 "Add ssh key"
+         3 "Generate new ssh key"
+         4 "Show Configuration"
+         5 "Save"
+         6 "Back"
+         7 "Quit")
+
+CHOICE=$(dialog --clear \
+                  --backtitle "$BACKTITLE" \
+                  --title "$TITLE" \
+                  --menu "$MENU" \
+                  $HEIGHT $WIDTH $CHOICE_HEIGHT \
+                  "${OPTIONS[@]}" \
+                  2>&1 >/dev/tty)
+
+clear
+case $CHOICE in
+        1)
+            NewServer
+            ;;
+        2)
+            AddKey
+            ;;
+        3)
+            GenerateKey
+            ;;
+        4)
+            ShowConfig
+            ;;
+        5)
+            Save
+            ;;
+        6)
+            Back
+            ;;
+        7)
+            break
+            ;;
+        *)
+            echo "Incorrect input!"
+            ;;
+esac

@@ -2,6 +2,8 @@
 
 ## What is it?
 
+*This is my first practical (at least for me) program. I am trying to learn basic/advanced shell scripting methods to help better my career. I appriciate any help and or guidance along the way*
+
 Server connection Script, or scs, is a lazy mans ssh connection tool to help eleviate some of the tedious connections settings. Instead of using code like `ssh -P xxx -i /location/of/key user@example.com` and having to remember every line for each server, or having to manually add new Hosts to the `.ssh/config` file for each server, this script will help.
 
 Everytime you launch scs, it will prompt you will a few choices of what you'd like to do. Things like;

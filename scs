@@ -1,18 +1,18 @@
 #!/bin/sh
 ## Functions
-ServerConnect(){
+ServerConnect() {
   ~/.config/scs/bin/serverconnect
 }
 
-NewServer(){
+NewServer() {
   ~/.config/scs/bin/newserver
 }
 
-EditServer(){
+EditServer() {
   ~/.config/scs/bin/editserver
 }
 
-RemoveServer(){
+RemoveServer() {
   ~/.config/scs/bin/removeserver
 }
 
@@ -20,8 +20,8 @@ RemoveServer(){
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Server Connect Script"
-TITLE="Server Connect Script"
+BACKTITLE="SSH Connect Script"
+TITLE="SSH Connect Script"
 MENU="Select one of the following:"
 
 OPTIONS=(1 "Connect to server"
